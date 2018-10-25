@@ -185,7 +185,8 @@ class Bibus(object):
     def test_one_route_depth_2(self):
         self._pt_ref_call('routes', 'route:BIB:Nav2092', depth=2)
 
-    @xfail(reason="there is some instability on the order of the stoparea list", raises=AssertionError)
+    @xfail(reason="there is some instability on the order of the stoparea list",
+           raises=AssertionError, strict=True)
     def test_one_route_depth_3(self):
         self._pt_ref_call('routes', 'route:BIB:Nav2092', depth=3)
 
