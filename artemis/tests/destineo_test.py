@@ -43,7 +43,7 @@ class Destineo(object):
                      first_section_mode=['walking', 'car'],
                      min_nb_journeys=3)
 
-    @xfail(reason="http://jira.canaltp.fr/browse/NAVP-209", raises=AssertionError)
+    @xfail(reason="http://jira.canaltp.fr/browse/NAVP-209", raises=AssertionError, strict=True)
     def test_destineo_04(self):
         """
         we go to "Pazanne-Mairie-(Ste) (Sainte-Pazanne)" from "gare de Ste-Pazanne (Sainte-Pazanne)"
