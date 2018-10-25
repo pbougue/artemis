@@ -1,6 +1,5 @@
 from artemis.test_mechanism import ArtemisTestFixture, dataset, DataSet, set_scenario
 import pytest
-xfail = pytest.mark.xfail
 
 
 @dataset([DataSet("sherbrooke")])
