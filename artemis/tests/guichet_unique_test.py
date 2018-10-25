@@ -262,13 +262,13 @@ class TestGuichetUniqueDefault(GuichetUnique, ArtemisTestFixture):
 
 @set_scenario({COVERAGE: {"scenario": "new_default"}})
 class TestGuichetUniqueNewDefault(GuichetUnique, ArtemisTestFixture):
-    @xfail(reason="Unsupported new_default scenario!", raises=AssertionError)
+    @xfail(reason="Unsupported new_default scenario!", raises=AssertionError, strict=True)
     def test_guichet_unique_caen_to_marseille(self):
         super(TestGuichetUniqueNewDefault, self).test_guichet_unique_caen_to_marseille()
 
 
 @set_scenario({COVERAGE: {"scenario": "experimental"}})
 class TestGuichetUniqueExperimental(GuichetUnique, ArtemisTestFixture):
-    @xfail(reason="Unsupported experimental scenario!", raises=AssertionError)
+    @xfail(reason="Unsupported experimental scenario!", raises=AssertionError, strict=True)
     def test_guichet_unique_caen_to_marseille(self):
         super(TestGuichetUniqueExperimental, self).test_guichet_unique_caen_to_marseille()
