@@ -1,9 +1,9 @@
 Flask-RESTful==0.3.5
 pytest>2.7.2
-requests
+docker-compose==1.23.2
+requests==2.20.1
 retrying==1.2.3
 jsonpath_rw==1.4.0
 psycopg2>=2.6.1
-docker-compose
 docker
 

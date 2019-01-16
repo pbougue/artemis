@@ -1,7 +1,6 @@
 import os
 import json
 import requests
-import inspect
 from artemis import default_checker, utils
 from artemis.configuration_manager import config
 import difflib
@@ -193,7 +192,7 @@ class ArtemisTestFixture(CommonTestFixture):
 
         if last_rt_data_loaded == rt_data_loaded:
             raise Exception("real time data not loaded")
-        logger.info('RT data reloaded at {}'.format(rt_data_loaded))    
+        logger.info('RT data reloaded at {}'.format(rt_data_loaded))
 
     def request_compare(self, url):
         # creating the url

@@ -25,7 +25,7 @@ def clean_kirin_db():
         cur.execute("SELECT relname FROM pg_stat_user_tables WHERE relname != 'alembic_version';")
         tables = cur.fetchall()
 
-        truncate_tables(cur, ', '.join(e[0] for e in tables))
+        truncate_tables(cur, ', '.join(e[0] for e in tables if e[0] not in ("layer", "topology")))
 
         conn.commit()
         logging.getLogger(__name__).debug("query done")

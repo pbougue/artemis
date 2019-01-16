@@ -1,23 +1,11 @@
 # encoding: utf-8
 
-DATA_DIR = "/artemis/data"
+DATA_DIR = "{/path/to/artemis/data}"
 
-CITIES_INPUT_FILE = DATA_DIR + "/france_boundaries.osm.pbf"
+REFERENCE_FILE_PATH = '{/path/to/artemis/references}'
 
-DATASET_PATH_LAYOUT = DATA_DIR + "/{dataset}/"
+KIRIN_DB = 'dbname=kirin user=navitia host={kirin_db_ip} password=navitia'
 
-NAV_FILE_PATH_LAYOUT = "/srv/ed/data/{dataset}/data.nav.lz4"
+URL_JORMUN = 'http://localhost:9191'
 
-API_POINT_PREFIX = 'navitia/'
-
-REFERENCE_FILE_PATH = '/artemis/references'
-
-RESPONSE_FILE_PATH = '/artemis/output'
-
-JORMUNGANDR_DB = 'dbname=jormungandr user=jormungandr host=artemis_db password=jormungandr'
-
-KIRIN_DB = 'dbname=kirin user=kirin host=artemis_db password=kirin'
-
-CITIES_DB = 'dbname=cities user=navitia host=artemis_db password=password'
-
-KIRIN_API = 'http://kirin:9090'
+USE_ARTEMIS_NG = True
